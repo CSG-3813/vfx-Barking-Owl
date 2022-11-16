@@ -14492,7 +14492,7 @@ MonoBehaviour:
   sparksParticleSystem: {fileID: 1162567629}
   smokeParticleSystem: {fileID: 151655941}
   fireFadeDelay: 3
-  weatherSystem: {fileID: 0}
+  weatherSystem: {fileID: 1132930728}
 --- !u!1001 &473194406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14763,6 +14763,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 518851158}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &533932770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533932771}
+  m_Layer: 0
+  m_Name: EyePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &533932771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533932770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1887, z: 0.1001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1634786498}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &540253188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33152,6 +33183,40 @@ MonoBehaviour:
   runVelocity: 0.1
   animationRunParameter: Run
   animationSpeedParameter: Speed
+--- !u!4 &1634786498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4429102427960218, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1634786488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1634786499
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634786489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1634786500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634786489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb4a9ed8348fe44ab56ccf3060bc264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Eyepoint: {fileID: 533932771}
+  TargetTag: Player
+  FieldOfView: 45
 --- !u!1001 &1642455767
 PrefabInstance:
   m_ObjectHideFlags: 0

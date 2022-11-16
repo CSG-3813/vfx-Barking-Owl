@@ -1,7 +1,7 @@
 /***
  * Author: Akram Taghavi-Burris
  * Created: 10-30-22
- * Modified:
+ * Modified: 11-16-22
  * Description: Controls fire effects
  ***/
 
@@ -16,7 +16,7 @@ public class Fire : MonoBehaviour
     public ParticleSystem sparksParticleSystem;
     public ParticleSystem smokeParticleSystem;
     public float fireFadeDelay = 1;
-    public WeatherSys weatherSystem;
+    public Weather weatherSystem;
     AudioSource audioSrc;
     bool isFireOut = false;
 
